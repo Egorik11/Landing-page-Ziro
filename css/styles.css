@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #272323;
+}
+
+.wrapper-header {
+  background-color: #f5f7ff;
+  width: 100%;
+}
+.wrapper-header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1150px;
+  width: 100%;
+  padding: 20px 20px 50px;
+}
+.wrapper-header .header .header-logo {
+  padding-right: 25px;
+}
+.wrapper-header .header .navigation .navigation-navlist {
+  display: flex;
+}
+.wrapper-header .header .navigation .navigation-navlist li {
+  list-style: none;
+  padding-right: 34px;
+}
+.wrapper-header .header .navigation .navigation-navlist li a {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+.wrapper-header .header .search {
+  position: relative;
+  max-width: 307px;
+}
+.wrapper-header .header .search input {
+  border: none;
+  width: 307px;
+  border-radius: 16px;
+  padding: 10px 0 10px 16px;
+  font-size: 14px;
+}
+.wrapper-header .header .search input ::placeholder {
+  color: #a5a5a5;
+}
+.wrapper-header .header .search .search-icon {
+  position: absolute;
+  display: block;
+  background-color: #f5f7ff;
+  border-radius: 50%;
+  margin-right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/Search.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: 14px 14px;
+}
+.wrapper-header .header .auth {
+  font-size: 16px;
+}
+.wrapper-header .header .auth .auth-login a {
+  color: #4238af;
+}
+
+.wrapper-hero {
+  background-color: #f5f7ff;
+  width: 100%;
+}
+.wrapper-hero .hero {
+  margin: auto;
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 21px 0;
+}
+.wrapper-hero .hero .hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+.wrapper-hero .hero .hero-section .hero-section-text {
+  padding-top: 72px;
+}
+.wrapper-hero .hero .hero-section .hero-section-text h1 {
+  color: #353434;
+  font-size: 45px;
+  font-family: "Prompt";
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 3px;
+  padding-bottom: 17px;
+}
+.wrapper-hero .hero .hero-section .hero-section-text h1 .hero-title {
+  color: #ff5c00;
+}
+.wrapper-hero .hero .hero-section .hero-section-text p {
+  font-size: 14px;
+  color: #a8a8a8;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+.wrapper-hero .hero .hero-section .hero-section-text .hero-btn {
+  background-color: #544cac;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+  padding: 11px 23px;
+  border-style: none;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+.wrapper-hero .hero .hero-section .hero-cta {
+  display: flex;
+  align-items: center;
+}
+.wrapper-hero .hero .hero-section .hero-cta .cta-watch {
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+}
+.wrapper-hero .hero .hero-section .hero-cta .cta-watch span {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.wrapper-hero .hero .hero-section .hero-cta .cta-watch span img {
+  width: 100%;
+  max-width: 23px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.wrapper-hero .hero .hero-section .hero-cta .cta-watch a {
+  font-size: 16px;
+  color: #000;
+  padding-left: 12px;
+}
+
+main .company-section {
+  margin: 0 auto;
+  max-width: 1150px;
+  width: 100%;
+  padding: 32px 20px 0px;
+}
+main .company-section .company-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 67px;
+}
+main .company-section .how-it-works .how-it-works-text {
+  font-family: "Oswald";
+  font-size: 12px;
+  color: #ff5c00;
+  padding-bottom: 20px;
+}
+main .company-section .how-it-works .job-section {
+  display: flex;
+  justify-content: space-between;
+}
+main .company-section .how-it-works .job-section .company-section-text h2 {
+  font-size: 40px;
+  font-family: "Oswald";
+  color: #353434;
+  letter-spacing: 2px;
+  line-height: 51px;
+  font-weight: 400;
+  padding-bottom: 37px;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 435px;
+  background-color: #f5f7ff;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 22px;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-container {
+  display: flex;
+  align-items: center;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-number-1,
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-number-2,
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-number-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-number-1 {
+  background-color: #f3e0ff;
+  color: #9444c9;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-number-2 {
+  background-color: #e7e9fe;
+  color: #626fff;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-number-3 {
+  background-color: #ffdecc;
+  color: #ff5c00;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #323232 !important;
+  padding-left: 16px;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-ico {
+  position: absolute;
+  right: 20px;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-ico-transform {
+  position: absolute;
+  right: 20px;
+  transform: rotateZ(180deg);
+}
+main .choose-section {
+  margin: 0 auto;
+  max-width: 1150px;
+  width: 100%;
+  padding: 32px 20px 0px;
+}
+main .choose-section .title-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+  padding-bottom: 45px;
+}
+main .choose-section .title-container h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: "Oswald";
+  color: #353434;
+}
+main .choose-section .title-container .choose-description p {
+  color: #a8a8a8;
+  font-size: 14px;
+}
+main .choose-section .choose-cards {
+  display: flex;
+  justify-content: space-between;
+}
+main .choose-section .choose-cards .card {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+}
+
+@media (max-width: 1150px) {
+  .header {
+    flex-direction: column;
+    max-width: 800px;
+    padding: 20px !important;
+  }
+  .header .header-logo {
+    padding-bottom: 20px;
+  }
+  .header .search {
+    margin-bottom: 15px;
+  }
+  .header .navigation {
+    padding-bottom: 15px;
+  }
+  .header .navigation li {
+    padding: 0 15px !important;
+    display: flex;
+    text-align: center;
+  }
+  .header .navigation li a {
+    font-size: 13px !important;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-section img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 568px;
+  }
+  .hero-section .hero-section-text {
+    padding-top: 0 !important;
+    text-align: center;
+  }
+  .hero-section .hero-section-text h1 {
+    font-size: 35px !important;
+  }
+  .hero-section .hero-cta {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
