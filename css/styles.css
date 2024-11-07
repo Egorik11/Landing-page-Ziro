@@ -112,8 +112,8 @@ a {
 }
 .wrapper-hero .hero .hero-section .hero-section-text p {
   font-size: 14px;
-  color: #a8a8a8;
   letter-spacing: 0.3px;
+  color: #8f8f8f;
   line-height: 24px;
   padding-bottom: 30px;
 }
@@ -126,6 +126,7 @@ a {
   border-style: none;
   font-weight: 400;
   font-family: "Open Sans";
+  cursor: pointer;
 }
 .wrapper-hero .hero .hero-section .hero-cta {
   display: flex;
@@ -180,28 +181,25 @@ main .company-section .how-it-works .job-section {
   justify-content: space-between;
 }
 main .company-section .how-it-works .job-section .company-section-text h2 {
+  font-weight: 400;
   font-size: 40px;
   font-family: "Oswald";
   color: #353434;
   letter-spacing: 2px;
+  padding-bottom: 14px;
   line-height: 51px;
-  font-weight: 400;
   padding-bottom: 37px;
 }
 main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion {
   position: relative;
   display: flex;
-  align-items: center;
   width: 100%;
   max-width: 435px;
   background-color: #f5f7ff;
   border-radius: 8px;
   padding: 14px;
   margin-bottom: 22px;
-}
-main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-container {
-  display: flex;
-  align-items: center;
+  cursor: pointer;
 }
 main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-number-1,
 main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-number-2,
@@ -228,10 +226,20 @@ main .company-section .how-it-works .job-section .company-section-text .company-
   color: #ff5c00;
 }
 main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-text {
+  width: 100%;
+  max-width: 390px;
   font-weight: 600;
   font-size: 16px;
   color: #323232 !important;
   padding-left: 16px;
+  padding-top: 5px;
+}
+main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-text .accordion-description {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #8f8f8f;
+  line-height: 24px;
+  font-size: 12px;
 }
 main .company-section .how-it-works .job-section .company-section-text .company-section-description .accordion .accordion-ico {
   position: absolute;
@@ -246,7 +254,7 @@ main .choose-section {
   margin: 0 auto;
   max-width: 1150px;
   width: 100%;
-  padding: 32px 20px 0px;
+  padding: 96px 20px 0px;
 }
 main .choose-section .title-container {
   margin: 0 auto;
@@ -262,20 +270,117 @@ main .choose-section .title-container h2 {
   font-size: 40px;
   font-family: "Oswald";
   color: #353434;
+  letter-spacing: 2px;
+  padding-bottom: 14px;
+  line-height: 51px;
 }
-main .choose-section .title-container .choose-description p {
-  color: #a8a8a8;
+main .choose-section .title-container .choose-description p,
+main .choose-section .title-container .featured-description p {
   font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #8f8f8f;
+  line-height: 24px;
 }
 main .choose-section .choose-cards {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 119px;
 }
-main .choose-section .choose-cards .card {
+main .choose-section .choose-cards .card-title {
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+main .choose-section .choose-cards .card-description {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #8f8f8f;
+  line-height: 24px;
+}
+main .featured-slider {
+  display: flex;
+  align-items: center;
+  margin-left: -96px;
+}
+main .featured-slider .arrows-slider {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+main .featured-slider .arrows-slider .arrow-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ef6010;
+  width: 60px;
+  height: 60px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+main .featured-slider .arrows-slider .arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9faff;
+  width: 60px;
+  height: 60px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+main .featured-slider .slider-cards {
+  display: flex;
+}
+main .featured-slider .slider-cards .card-dots {
+  width: 23px;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+main .featured-slider .slider-cards .card-dots span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #332d2d;
+  border-radius: 50%;
+}
+
+.card {
+  position: relative;
+  margin-top: 15px;
+  padding: 40px 30px 28px 37px;
   width: 350px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+  cursor: pointer;
+}
+
+.w-380 {
+  margin-top: 15px;
+  padding: 40px 30px 28px 37px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+  cursor: pointer;
+  width: 380px;
+  margin-left: 51px;
+  margin-top: 35px;
+}
+
+.active-card {
+  margin-top: 0;
+  margin-bottom: 15px;
+  background-color: #f9faff;
+}
+
+.active-card-slider {
+  margin-top: 0;
+  margin-bottom: 35px;
+  background-color: #f9faff;
 }
 
 @media (max-width: 1150px) {
@@ -319,5 +424,31 @@ main .choose-section .choose-cards .card {
   .hero-section .hero-cta {
     justify-content: center;
     padding-bottom: 20px;
+  }
+  .company-logo {
+    flex-wrap: wrap;
+  }
+  .company-logo img {
+    padding: 0 10px;
+  }
+  .how-it-works .how-it-works-text {
+    text-align: center;
+  }
+  .how-it-works .job-section {
+    display: block !important;
+  }
+  .how-it-works .job-section .company-section-text h2 {
+    text-align: center;
+  }
+  .how-it-works .job-section .company-section-text .company-section-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-it-works .job-section img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 635px;
   }
 }

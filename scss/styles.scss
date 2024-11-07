@@ -13,6 +13,33 @@ a {
   color: #272323;
 }
 
+@mixin description-text {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #8f8f8f;
+  line-height: 24px;
+}
+
+@mixin h2-title {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: 'Oswald';
+  color: #353434;
+  letter-spacing: 2px;
+  padding-bottom: 14px;
+  line-height: 51px;
+}
+
+@mixin card {
+  margin-top: 15px;
+  padding: 40px 30px 28px 37px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+  cursor: pointer;
+}
+
 .wrapper-header {
   background-color: #f5f7ff;
   width: 100%;
@@ -125,10 +152,7 @@ a {
         }
 
         p {
-          font-size: 14px;
-          color: #a8a8a8;
-          letter-spacing: 0.3px;
-          line-height: 24px;
+          @include description-text;
           padding-bottom: 30px;
         }
 
@@ -141,6 +165,7 @@ a {
           border-style: none;
           font-weight: 400;
           font-family: 'Open Sans';
+          cursor: pointer;
         }
       }
 
@@ -208,12 +233,7 @@ main {
 
         .company-section-text {
           h2 {
-            font-size: 40px;
-            font-family: 'Oswald';
-            color: #353434;
-            letter-spacing: 2px;
-            line-height: 51px;
-            font-weight: 400;
+            @include h2-title;
             padding-bottom: 37px;
           }
 
@@ -221,18 +241,13 @@ main {
             .accordion {
               position: relative;
               display: flex;
-              align-items: center;
               width: 100%;
               max-width: 435px;
               background-color: #f5f7ff;
               border-radius: 8px;
               padding: 14px;
               margin-bottom: 22px;
-
-              .accordion-container {
-                display: flex;
-                align-items: center;
-              }
+              cursor: pointer;
 
               .accordion-number-1,
               .accordion-number-2,
@@ -263,10 +278,18 @@ main {
               }
 
               .accordion-text {
+                width: 100%;
+                max-width: 390px;
                 font-weight: 600;
                 font-size: 16px;
                 color: #323232 !important;
                 padding-left: 16px;
+                padding-top: 5px;
+
+                .accordion-description {
+                  @include description-text;
+                  font-size: 12px;
+                }
               }
 
               .accordion-ico {
@@ -290,7 +313,7 @@ main {
     margin: 0 auto;
     max-width: 1150px;
     width: 100%;
-    padding: 32px 20px 0px;
+    padding: 96px 20px 0px;
 
     .title-container {
       margin: 0 auto;
@@ -302,16 +325,13 @@ main {
       h2 {
         display: flex;
         justify-content: center;
-        font-weight: 400;
-        font-size: 40px;
-        font-family: 'Oswald';
-        color: #353434;
+        @include h2-title;
       }
 
-      .choose-description {
+      .choose-description,
+      .featured-description {
         p {
-          color: #a8a8a8;
-          font-size: 14px;
+          @include description-text;
         }
       }
     }
@@ -319,15 +339,104 @@ main {
     .choose-cards {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 119px;
 
-      .card {
-        width: 350px;
-        background-color: #fff;
-        border-radius: 20px;
-        box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+      .card-title {
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-top: 12px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+      }
+
+      .card-description {
+        @include description-text;
       }
     }
   }
+
+  .featured-slider {
+    display: flex;
+    align-items: center;
+    margin-left: -96px;
+
+    .arrows-slider {
+      display: flex;
+      justify-content: space-between;
+      width: 140px;
+
+      .arrow-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ef6010;
+        width: 60px;
+        height: 60px;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+
+      .arrow-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9faff;
+        width: 60px;
+        height: 60px;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+    }
+
+    .slider-cards {
+      display: flex;
+
+      .card-dots {
+        width: 23px;
+        position: absolute;
+        right: 10px;
+        display: flex;
+        justify-content: space-between;
+        span {
+          display: block;
+          width: 5px;
+          height: 5px;
+          background-color: #332d2d;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  position: relative;
+  margin-top: 15px;
+  padding: 40px 30px 28px 37px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+  cursor: pointer;
+}
+
+.w-380 {
+  @include card;
+  width: 380px;
+  margin-left: 51px;
+  margin-top: 35px;
+}
+
+.active-card {
+  margin-top: 0;
+  margin-bottom: 15px;
+  background-color: #f9faff;
+}
+
+.active-card-slider {
+  margin-top: 0;
+  margin-bottom: 35px;
+  background-color: #f9faff;
 }
 
 @media (max-width: 1150px) {
@@ -379,6 +488,42 @@ main {
     .hero-cta {
       justify-content: center;
       padding-bottom: 20px;
+    }
+  }
+
+  .company-logo {
+    flex-wrap: wrap;
+
+    img {
+      padding: 0 10px;
+    }
+  }
+
+  .how-it-works {
+    .how-it-works-text {
+      text-align: center;
+    }
+    .job-section {
+      display: block !important;
+
+      .company-section-text {
+        h2 {
+          text-align: center;
+        }
+
+        .company-section-description {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 635px;
+      }
     }
   }
 }
